@@ -25,4 +25,11 @@ class PluginQrPhp_qr_code_1_1_4{
     $src = '/qr/png?text='.$text;
     return $src;
   }
+  public function save_file($filename, $text){
+    require_once __DIR__.'/lib/qrlib.php';
+    if(is_array($text)){
+      $text = json_encode($text);
+    }
+    QRcode::png($text, $filename);
+  }
 }

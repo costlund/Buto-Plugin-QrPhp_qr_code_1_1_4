@@ -62,7 +62,7 @@ Or just set img attribute src to:
 
 ## Image src attribute
 
-It is possible to just get the url for more flexible usage. Perfect for PDF usage.
+It is possible to just get the url for more flexible usage.
 
 ```
 wfPlugin::includeonce('qr/php_qr_code_1_1_4');
@@ -76,5 +76,18 @@ Outputs.
 ```
 /qr/png?text=Some+text+or+an+array+to+render+json.
 ```
+
+## Save file.
+
+One could save file. Can be handy for PDF usage where file must exist on server.
+
+```
+wfPlugin::includeonce('qr/php_qr_code_1_1_4');
+$qr = new PluginQrPhp_qr_code_1_1_4();
+$filename = __DIR__."/qr_file.png";
+$text = 'Some text.';
+$qr->save_file($filename, $text);
+```
+
 
 
