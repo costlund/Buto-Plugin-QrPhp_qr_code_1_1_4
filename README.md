@@ -90,4 +90,9 @@ $qr->save_file($filename, $text);
 ```
 
 
-
+## GD extension for PHP
+When using this plugin PHP needs method ImageCreate to be enabled. In Ubuntu this could be solved with this commands.
+```
+sudo apt-get install php7.0-gd
+/etc/init.d/apache2 restart
+```
