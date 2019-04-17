@@ -9,6 +9,9 @@ class PluginQrPhp_qr_code_1_1_4{
     wfDocument::renderElement(array($img->get()));
   }
   public function page_png(){
+    if(function_exists('ImageCreate')===false){
+      throw new Exception('PluginQrPhp_qr_code_1_1_4 says: Method ImageCreate does not exist. Check if it´s enabled in php.ini.');
+    }
     require_once __DIR__.'/lib/qrlib.php';
     $text = wfRequest::get('text');
     $text = urldecode($text);
@@ -26,6 +29,9 @@ class PluginQrPhp_qr_code_1_1_4{
     return $src;
   }
   public function save_file($filename, $text){
+    if(function_exists('ImageCreate')===false){
+      throw new Exception('PluginQrPhp_qr_code_1_1_4 says: Method ImageCreate does not exist. Check if it´s enabled in php.ini.');
+    }
     require_once __DIR__.'/lib/qrlib.php';
     if(is_array($text)){
       $text = json_encode($text);
