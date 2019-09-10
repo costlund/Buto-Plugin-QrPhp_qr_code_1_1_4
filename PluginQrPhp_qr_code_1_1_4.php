@@ -14,6 +14,9 @@ class PluginQrPhp_qr_code_1_1_4{
     }
     require_once __DIR__.'/lib/qrlib.php';
     $text = wfRequest::get('text');
+    if(!$text){
+      $text = 'Example text in PluginQrPhp_qr_code_1_1_4::page_png.';
+    }
     $text = urldecode($text);
     QRcode::png($text);
     exit;
