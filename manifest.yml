@@ -15,7 +15,7 @@ history:
 plugin:
   -
     name: wf/array
-    version: 1.0.1
+    version: 1.2.0
 sys:
   -
     name: mercury
@@ -23,7 +23,7 @@ sys:
       - '1.0'
 php:
   - '7.2'
-author: Claes Östlund
+author: 'Claes Östlund'
 links:
-  'Demo': '/?webmaster_plugin=qr/php_qr_code_1_1_4&page=png&text=Demo from PluginQrPhp_qr_code_1_1_4::page_png.'
+  Demo: '/?webmaster_plugin=qr/php_qr_code_1_1_4&page=png&text=Demo from PluginQrPhp_qr_code_1_1_4::page_png.'
 description: ''
