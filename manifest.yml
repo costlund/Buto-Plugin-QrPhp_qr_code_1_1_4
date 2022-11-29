@@ -1,16 +1,24 @@
-version: '1.3'
+version: 1.4.0
 history:
-  '1.3':
+  1.4.0:
     date: '2019-09-10'
+    title: 'SRC'
+    description: 'Add $src where image data is stored on method save_file.'
+  1.3.0:
+    date: '2019-09-10'
+    title: 'Demo link'
     description: 'Add demo link.'
-  '1.2':
+  1.2.0:
     date: '2019-03-14'
+    title: 'Save file'
     description: 'Save file method.'
-  '1.1':
+  1.1.0:
     date: '2019-03-14'
+    title: 'Json'
     description: 'Json support.'
-  '1.0':
+  1.0.0:
     date: '2019-03-13'
+    title: 'Created'
     description: 'Manifest created.'
 plugin:
   -

@@ -1,5 +1,6 @@
 <?php
 class PluginQrPhp_qr_code_1_1_4{
+  public $src = null;
   public function widget_png($data){
     wfPlugin::includeonce('wf/array');
     $data = new PluginWfArray($data);
@@ -40,5 +41,10 @@ class PluginQrPhp_qr_code_1_1_4{
       $text = json_encode($text);
     }
     QRcode::png($text, $filename);
+    /**
+     * src
+     */
+    $imageData = base64_encode(file_get_contents($filename));
+    $this->src = 'data: '.mime_content_type($filename).';base64,'.$imageData;
   }
 }
