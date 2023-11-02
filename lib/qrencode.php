@@ -129,7 +129,7 @@
         //----------------------------------------------------------------------
         public function getCode()
         {
-            $ret;
+            $ret = null;
 
             if($this->count < $this->dataLength) {
                 $row = $this->count % $this->blocks;
@@ -243,7 +243,7 @@
         //----------------------------------------------------------------------
         public function encodeString8bit($string, $version, $level)
         {
-            if(string == NULL) {
+            if($string == NULL) {
                 throw new Exception('empty string!');
                 return NULL;
             }
