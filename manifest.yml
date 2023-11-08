@@ -1,5 +1,9 @@
-version: 1.5.2
+version: 1.5.3
 history:
+  1.5.3:
+    date: '2023-11-08'
+    title: Readme
+    description: 'Add Lib data.'
   1.5.2:
     date: '2023-11-02'
     title: Lib

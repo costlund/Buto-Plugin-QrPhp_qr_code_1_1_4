@@ -96,3 +96,6 @@ When using this plugin PHP needs method ImageCreate to be enabled. In Ubuntu thi
 sudo apt-get install php7.0-gd
 /etc/init.d/apache2 restart
 ```
+
+## Lib
+- https://github.com/lasalesi/phpqrcode/tree/master
